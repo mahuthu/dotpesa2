@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_qrscanner.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_qrscanner.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/item_call.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/item_call.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/fragment_sms.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/fragment_sms.xml"
+    },
+    {
+        "merged": "com.example.smscallcapture.app-mergeDebugResources-55:/layout/item_sms.xml",
+        "source": "com.example.smscallcapture.app-main-58:/layout/item_sms.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/fragment_web.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/fragment_web.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_main.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/item_sms.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/item_sms.xml"
+    },
+    {
+        "merged": "com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_support.xml",
+        "source": "com.example.smscallcapture.app-main-58:/layout/activity_support.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/fragment_calls.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/fragment_calls.xml"
+    },
+    {
+        "merged": "com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_qrscanner.xml",
+        "source": "com.example.smscallcapture.app-main-58:/layout/activity_qrscanner.xml"
+    },
+    {
+        "merged": "com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_license.xml",
+        "source": "com.example.smscallcapture.app-main-58:/layout/activity_license.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_settings.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_support.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_support.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_splash.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_license.xml",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_license.xml"
+    },
+    {
+        "merged": "com.example.smscallcapture.app-mergeDebugResources-55:/layout/item_call.xml",
+        "source": "com.example.smscallcapture.app-main-58:/layout/item_call.xml"
+    }
+]

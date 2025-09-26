@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="dotpesa_red">#FF0000</color>
+    <color name="dotpesa_green">#3A913F</color>
+    <color name="dotpesa_green_dark">#1E6636</color>
+    <color name="dotpesa_black">#000000</color>
+    <color name="dotpesa_white">#FFFFFF</color>
+
+    <style name="Theme.SmsCallCapture" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dotpesa_green</item>
+        <item name="colorPrimaryVariant">@color/dotpesa_green_dark</item>
+        <item name="colorSecondary">@color/dotpesa_red</item>
+        <item name="colorOnPrimary">@color/dotpesa_black</item>
+        <item name="android:windowBackground">@color/dotpesa_white</item>
+        <item name="android:textColor">@color/dotpesa_black</item>
+    </style>
+
+    <style name="Theme.SmsCallCapture.NoActionBar" parent="Theme.SmsCallCapture">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

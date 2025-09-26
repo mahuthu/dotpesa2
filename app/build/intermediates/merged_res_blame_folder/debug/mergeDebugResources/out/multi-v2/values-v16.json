@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.smscallcapture.app-mergeDebugResources-54:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/mahuthu/.gradle/caches/8.9/transforms/84400182c55c3f0b984d9028f04be84c/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}

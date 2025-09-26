@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.smscallcapture.app-mergeDebugResources-54:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/home/mahuthu/.gradle/caches/8.9/transforms/84400182c55c3f0b984d9028f04be84c/transformed/appcompat-1.6.1/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

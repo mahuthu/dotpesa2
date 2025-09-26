@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/welcomeOverlay"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="#CCFFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textWelcome"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="Welcome to DotPesa\nSet your server Base URL to continue.\nExample: https://192.168.1.100:8080/"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Reload"
+            app:srcCompat="@android:drawable/ic_menu_rotate"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Scan QR"
+            app:srcCompat="@drawable/ic_qr_code"/>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+

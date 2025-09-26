@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DotPesa</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_scan_qr">Scan QR</string>
+    <string name="menu_reload_web">Reload Web</string>
+    <string name="tab_web">Web</string>
+    <string name="tab_calls">Calls</string>
+    <string name="tab_sms">SMS</string>
+    <string name="sync_started">Sync started</string>
+    <string name="import_sms_title">Import and Sync SMS</string>
+    <string name="import_sms_hint">Enter date (YYYY-MM-DD)</string>
+    <string name="import_sms_action">Import &amp; Sync</string>
+    <string name="cancel">Cancel</string>
+</resources>
+
+
+
+
+
+
+
+
+
+

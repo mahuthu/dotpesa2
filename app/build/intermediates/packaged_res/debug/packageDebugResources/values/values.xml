@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="status_filter">
+        <item>ALL</item>
+        <item>PENDING</item>
+        <item>FAILED</item>
+        <item>UPLOADED</item>
+    </string-array>
+    <color name="dotpesa_black">#000000</color>
+    <color name="dotpesa_green">#3A913F</color>
+    <color name="dotpesa_green_dark">#1E6636</color>
+    <color name="dotpesa_red">#FF0000</color>
+    <color name="dotpesa_white">#FFFFFF</color>
+    <string name="app_name">DotPesa</string>
+    <string name="cancel">Cancel</string>
+    <string name="import_sms_action">Import &amp; Sync</string>
+    <string name="import_sms_hint">Enter date (YYYY-MM-DD)</string>
+    <string name="import_sms_title">Import and Sync SMS</string>
+    <string name="menu_reload_web">Reload Web</string>
+    <string name="menu_scan_qr">Scan QR</string>
+    <string name="menu_settings">Settings</string>
+    <string name="sync_started">Sync started</string>
+    <string name="tab_calls">Calls</string>
+    <string name="tab_sms">SMS</string>
+    <string name="tab_web">Web</string>
+    <style name="Theme.SmsCallCapture" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dotpesa_green</item>
+        <item name="colorPrimaryVariant">@color/dotpesa_green_dark</item>
+        <item name="colorSecondary">@color/dotpesa_red</item>
+        <item name="colorOnPrimary">@color/dotpesa_black</item>
+        <item name="android:windowBackground">@color/dotpesa_white</item>
+        <item name="android:textColor">@color/dotpesa_black</item>
+    </style>
+    <style name="Theme.SmsCallCapture.NoActionBar" parent="Theme.SmsCallCapture">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="Server Configuration" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="Protocol" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Spinner android:id="@+id/spinnerProtocol" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:text="Host" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/editHost" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri"/>
+
+        <TextView android:text="Port" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/editPort" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+
+        <TextView android:text="Base URL" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/textBaseUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="italic"/>
+
+        <Button android:id="@+id/buttonTestConnection" android:text="Test connection" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDD" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+
+        <TextView android:text="Identifiers" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:text="Branch ID" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/editBranchId" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:text="Modem ID" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/editModemId" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDD" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+
+        <TextView android:text="Sync" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:text="Interval seconds" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/editInterval" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDD" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+
+        <TextView android:text="Toggles" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+            <TextView android:text="Show toasts" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <Switch android:id="@+id/switchToasts" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+            <TextView android:text="Sound on receive" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <Switch android:id="@+id/switchSoundReceive" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+            <TextView android:text="Sound on upload" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <Switch android:id="@+id/switchSoundUpload" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
