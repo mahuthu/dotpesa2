@@ -30,6 +30,7 @@ id editHost
 id editInterval
 id editModemId
 id editPort
+id fabImportCalls
 id fabImportSms
 id fabRefreshCalls
 id fabRefreshSms

@@ -24,10 +24,6 @@
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/drawable/bg_welcome_panel.xml"
     },
     {
-        "merged": "com.example.smscallcapture.app-debug-56:/drawable_bg_welcome_panel.xml.flat",
-        "source": "com.example.smscallcapture.app-main-58:/drawable/bg_welcome_panel.xml"
-    },
-    {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
     },
@@ -60,10 +56,6 @@
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/fragment_web.xml"
     },
     {
-        "merged": "com.example.smscallcapture.app-debug-56:/layout_tab_item.xml.flat",
-        "source": "com.example.smscallcapture.app-main-58:/layout/tab_item.xml"
-    },
-    {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/layout_activity_qrscanner.xml.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_qrscanner.xml"
     },
@@ -82,6 +74,10 @@
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.smscallcapture.app-debug-56:/layout_fragment_calls.xml.flat",
+        "source": "com.example.smscallcapture.app-main-58:/layout/fragment_calls.xml"
     },
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/drawable_dotpesa3.png.flat",
@@ -158,9 +154,5 @@
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/menu_main_menu.xml.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/menu/main_menu.xml"
-    },
-    {
-        "merged": "com.example.smscallcapture.app-debug-56:/menu_main_menu.xml.flat",
-        "source": "com.example.smscallcapture.app-main-58:/menu/main_menu.xml"
     }
 ]

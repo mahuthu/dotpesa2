@@ -58,8 +58,7 @@ public final class SettingsDao_Impl implements SettingsDao {
   }
 
   @Override
-  public Object insertSetting(final SettingsEntity setting,
-      final Continuation<? super Unit> $completion) {
+  public Object insertSetting(final SettingsEntity setting, final Continuation<? super Unit> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -73,12 +72,11 @@ public final class SettingsDao_Impl implements SettingsDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object getSetting(final String key,
-      final Continuation<? super SettingsEntity> $completion) {
+  public Object getSetting(final String key, final Continuation<? super SettingsEntity> arg1) {
     final String _sql = "SELECT * FROM settings WHERE key = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
@@ -120,11 +118,11 @@ public final class SettingsDao_Impl implements SettingsDao {
           _statement.release();
         }
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object getAllSettings(final Continuation<? super List<SettingsEntity>> $completion) {
+  public Object getAllSettings(final Continuation<? super List<SettingsEntity>> arg0) {
     final String _sql = "SELECT * FROM settings";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
@@ -160,7 +158,7 @@ public final class SettingsDao_Impl implements SettingsDao {
           _statement.release();
         }
       }
-    }, $completion);
+    }, arg0);
   }
 
   @NonNull

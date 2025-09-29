@@ -23,6 +23,9 @@ interface CallDao {
 
     @Query("UPDATE calls SET status = :status, uploadedDate = :uploadedDate, updatedAt = :updatedAt WHERE id = :id")
     suspend fun updateCallStatus(id: Long, status: String, uploadedDate: Long?, updatedAt: Long)
+
+    @Query("SELECT MAX(startTime) FROM calls")
+    suspend fun getMaxStartTime(): Long?
 }
 
 

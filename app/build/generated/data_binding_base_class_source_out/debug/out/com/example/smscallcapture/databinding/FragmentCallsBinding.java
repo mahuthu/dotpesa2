@@ -22,6 +22,9 @@ public final class FragmentCallsBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
+  public final FloatingActionButton fabImportCalls;
+
+  @NonNull
   public final FloatingActionButton fabRefreshCalls;
 
   @NonNull
@@ -31,9 +34,10 @@ public final class FragmentCallsBinding implements ViewBinding {
   public final SearchView searchCalls;
 
   private FragmentCallsBinding(@NonNull FrameLayout rootView,
-      @NonNull FloatingActionButton fabRefreshCalls, @NonNull RecyclerView recyclerCalls,
-      @NonNull SearchView searchCalls) {
+      @NonNull FloatingActionButton fabImportCalls, @NonNull FloatingActionButton fabRefreshCalls,
+      @NonNull RecyclerView recyclerCalls, @NonNull SearchView searchCalls) {
     this.rootView = rootView;
+    this.fabImportCalls = fabImportCalls;
     this.fabRefreshCalls = fabRefreshCalls;
     this.recyclerCalls = recyclerCalls;
     this.searchCalls = searchCalls;
@@ -66,6 +70,12 @@ public final class FragmentCallsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.fabImportCalls;
+      FloatingActionButton fabImportCalls = ViewBindings.findChildViewById(rootView, id);
+      if (fabImportCalls == null) {
+        break missingId;
+      }
+
       id = R.id.fabRefreshCalls;
       FloatingActionButton fabRefreshCalls = ViewBindings.findChildViewById(rootView, id);
       if (fabRefreshCalls == null) {
@@ -84,8 +94,8 @@ public final class FragmentCallsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCallsBinding((FrameLayout) rootView, fabRefreshCalls, recyclerCalls,
-          searchCalls);
+      return new FragmentCallsBinding((FrameLayout) rootView, fabImportCalls, fabRefreshCalls,
+          recyclerCalls, searchCalls);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

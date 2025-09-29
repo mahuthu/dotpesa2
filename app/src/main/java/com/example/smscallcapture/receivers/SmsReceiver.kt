@@ -16,7 +16,8 @@ import com.example.smscallcapture.utils.SettingsManager
 class SmsReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         if (Telephony.Sms.Intents.SMS_RECEIVED_ACTION == intent.action) {
-            val messages = Telephony.Sms.Intents.getMessagesFromIntent(intent)
+            val parts = Telephony.Sms.Intents.getMessagesFromIntent(intent)
+            if (parts == null || parts.isEmpty()) return
             val app = context.applicationContext as SmsCallApplication
             val settingsManager = SettingsManager(context)
             
@@ -24,25 +25,30 @@ class SmsReceiver : BroadcastReceiver() {
                 val branchId = settingsManager.getBranchId()
                 val deviceId = settingsManager.getModemId()
                 val currentTime = System.currentTimeMillis()
-                
-                messages?.forEach { message ->
-                    val smsEntity = SmsEntity(
-                        sender = message.originatingAddress ?: "Unknown",
-                        message = message.messageBody ?: "",
-                        receivedDate = message.timestampMillis,
-                        status = "PENDING",
-                        branchId = branchId,
-                        deviceId = deviceId,
-                        createdAt = currentTime,
-                        updatedAt = currentTime
-                    )
-                    
-                    app.repository.insertSms(smsEntity)
-                    Log.d("SmsReceiver", "SMS inserted: ${smsEntity.sender}")
-                    
-                    if (settingsManager.isSmsReceiveSoundEnabled()) {
-                        playSound(context, "ting.wav")
-                    }
+
+                // Concatenate all message bodies in order
+                val fullBody = buildString {
+                    parts.forEach { append(it.messageBody ?: "") }
+                }
+                val sender = parts.first().originatingAddress ?: "Unknown"
+                val receivedTs = parts.minOfOrNull { it.timestampMillis } ?: currentTime
+
+                val smsEntity = SmsEntity(
+                    sender = sender,
+                    message = fullBody,
+                    receivedDate = receivedTs,
+                    status = "PENDING",
+                    branchId = branchId,
+                    deviceId = deviceId,
+                    createdAt = currentTime,
+                    updatedAt = currentTime
+                )
+
+                app.repository.insertSms(smsEntity)
+                Log.d("SmsReceiver", "SMS inserted (concatenated): ${smsEntity.sender} len=${fullBody.length}")
+
+                if (settingsManager.isSmsReceiveSoundEnabled()) {
+                    playSound(context, "ting.wav")
                 }
             }
         }

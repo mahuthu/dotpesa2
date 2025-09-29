@@ -29,179 +29,177 @@
 17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
 17-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:11:5-87
 17-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:11:22-84
-18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL" />
-18-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:12:5-88
-18-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:12:22-85
-19    <uses-permission android:name="android.permission.CAMERA" />
-19-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:13:5-65
-19-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:13:22-62
-20    <uses-permission android:name="android.permission.WAKE_LOCK" />
-20-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:14:5-68
-20-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:14:22-65
-21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-21-->[androidx.work:work-runtime:2.9.0] /home/mahuthu/.gradle/caches/8.9/transforms/9d3f3c1fdeca3ec03b8bf781a302e6cd/transformed/work-runtime-2.9.0/AndroidManifest.xml:24:5-79
-21-->[androidx.work:work-runtime:2.9.0] /home/mahuthu/.gradle/caches/8.9/transforms/9d3f3c1fdeca3ec03b8bf781a302e6cd/transformed/work-runtime-2.9.0/AndroidManifest.xml:24:22-76
-22    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-22-->[androidx.work:work-runtime:2.9.0] /home/mahuthu/.gradle/caches/8.9/transforms/9d3f3c1fdeca3ec03b8bf781a302e6cd/transformed/work-runtime-2.9.0/AndroidManifest.xml:25:5-81
-22-->[androidx.work:work-runtime:2.9.0] /home/mahuthu/.gradle/caches/8.9/transforms/9d3f3c1fdeca3ec03b8bf781a302e6cd/transformed/work-runtime-2.9.0/AndroidManifest.xml:25:22-78
-23
-24    <permission
-24-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
-25        android:name="com.example.smscallcapture.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-25-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-26        android:protectionLevel="signature" />
-26-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
-27
-28    <uses-permission android:name="com.example.smscallcapture.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
-28-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
-28-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-29    <uses-feature
-29-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:25:5-27:36
-30        android:name="android.hardware.camera"
-30-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:26:9-47
-31        android:required="false" />
-31-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:27:9-33
-32    <uses-feature
-32-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:28:5-30:36
-33        android:name="android.hardware.camera.front"
-33-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:29:9-53
-34        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-34-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:30:9-33
-35    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
-36    <uses-feature
-36-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:33:5-35:36
-37        android:name="android.hardware.camera.autofocus"
-37-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:34:9-57
-38        android:required="false" />
-38-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:35:9-33
-39    <uses-feature
-39-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:36:5-38:36
-40        android:name="android.hardware.camera.flash"
-40-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:37:9-53
-41        android:required="false" />
-41-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:38:9-33
-42    <uses-feature
-42-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:39:5-41:36
-43        android:name="android.hardware.screen.landscape"
-43-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:40:9-57
-44        android:required="false" />
-44-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:41:9-33
-45    <uses-feature
-45-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:42:5-44:36
-46        android:name="android.hardware.wifi"
-46-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:43:9-45
-47        android:required="false" />
-47-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:44:9-33
-48
-49    <application
-49-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:16:5-78:19
-50        android:name="com.example.smscallcapture.SmsCallApplication"
-50-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:17:9-43
-51        android:allowBackup="true"
-51-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:18:9-35
-52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-52-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
-53        android:debuggable="true"
-54        android:extractNativeLibs="true"
-55        android:icon="@mipmap/ic_launcher"
-55-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:19:9-43
-56        android:label="@string/app_name"
-56-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:20:9-41
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:12:5-65
+18-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:12:22-62
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:13:5-68
+19-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:13:22-65
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[androidx.work:work-runtime:2.9.0] /home/mahuthu/.gradle/caches/8.9/transforms/9d3f3c1fdeca3ec03b8bf781a302e6cd/transformed/work-runtime-2.9.0/AndroidManifest.xml:24:5-79
+20-->[androidx.work:work-runtime:2.9.0] /home/mahuthu/.gradle/caches/8.9/transforms/9d3f3c1fdeca3ec03b8bf781a302e6cd/transformed/work-runtime-2.9.0/AndroidManifest.xml:24:22-76
+21    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+21-->[androidx.work:work-runtime:2.9.0] /home/mahuthu/.gradle/caches/8.9/transforms/9d3f3c1fdeca3ec03b8bf781a302e6cd/transformed/work-runtime-2.9.0/AndroidManifest.xml:25:5-81
+21-->[androidx.work:work-runtime:2.9.0] /home/mahuthu/.gradle/caches/8.9/transforms/9d3f3c1fdeca3ec03b8bf781a302e6cd/transformed/work-runtime-2.9.0/AndroidManifest.xml:25:22-78
+22
+23    <permission
+23-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+24        android:name="com.example.smscallcapture.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.example.smscallcapture.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+27-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+28    <uses-feature
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:25:5-27:36
+29        android:name="android.hardware.camera"
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:26:9-47
+30        android:required="false" />
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:27:9-33
+31    <uses-feature
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:28:5-30:36
+32        android:name="android.hardware.camera.front"
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:29:9-53
+33        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:30:9-33
+34    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:33:5-35:36
+36        android:name="android.hardware.camera.autofocus"
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:34:9-57
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:35:9-33
+38    <uses-feature
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:36:5-38:36
+39        android:name="android.hardware.camera.flash"
+39-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:37:9-53
+40        android:required="false" />
+40-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:38:9-33
+41    <uses-feature
+41-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:39:5-41:36
+42        android:name="android.hardware.screen.landscape"
+42-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:40:9-57
+43        android:required="false" />
+43-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:41:9-33
+44    <uses-feature
+44-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:42:5-44:36
+45        android:name="android.hardware.wifi"
+45-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:43:9-45
+46        android:required="false" />
+46-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/mahuthu/.gradle/caches/8.9/transforms/6ca5ad397a4ce42b69690f4fc10c9429/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:44:9-33
+47
+48    <application
+48-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:15:5-77:19
+49        android:name="com.example.smscallcapture.SmsCallApplication"
+49-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:16:9-43
+50        android:allowBackup="true"
+50-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:17:9-35
+51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+51-->[androidx.core:core:1.12.0] /home/mahuthu/.gradle/caches/8.9/transforms/0884bc436d981b3968aaa7e720d2826c/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+52        android:debuggable="true"
+53        android:extractNativeLibs="true"
+54        android:icon="@mipmap/ic_launcher"
+54-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:18:9-43
+55        android:label="@string/app_name"
+55-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:19:9-41
+56        android:testOnly="true"
 57        android:theme="@style/Theme.SmsCallCapture" >
-57-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:21:9-52
+57-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:20:9-52
 58        <activity
-58-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:24:9-32:20
+58-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:23:9-31:20
 59            android:name="com.example.smscallcapture.ui.activities.SplashActivity"
-59-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:25:13-57
+59-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:24:13-57
 60            android:exported="true"
-60-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:26:13-36
+60-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:25:13-36
 61            android:theme="@style/Theme.SmsCallCapture.NoActionBar" >
-61-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:27:13-68
+61-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:26:13-68
 62            <intent-filter>
-62-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:28:13-31:29
+62-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:27:13-30:29
 63                <action android:name="android.intent.action.MAIN" />
-63-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:29:17-69
-63-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:29:25-66
+63-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:28:17-69
+63-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:28:25-66
 64
 65                <category android:name="android.intent.category.LAUNCHER" />
-65-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:30:17-77
-65-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:30:27-74
+65-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:29:17-77
+65-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:29:27-74
 66            </intent-filter>
 67        </activity>
 68        <activity
-68-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:34:9-36:40
+68-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:33:9-35:40
 69            android:name="com.example.smscallcapture.ui.activities.MainActivity"
-69-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:35:13-55
+69-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:34:13-55
 70            android:exported="false" />
-70-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:36:13-37
+70-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:35:13-37
 71        <activity
-71-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:38:9-41:72
+71-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:37:9-40:72
 72            android:name="com.example.smscallcapture.ui.activities.SettingsActivity"
-72-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:39:13-59
+72-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:38:13-59
 73            android:exported="false"
-73-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:40:13-37
+73-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:39:13-37
 74            android:parentActivityName="com.example.smscallcapture.ui.activities.MainActivity" />
-74-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:41:13-69
+74-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:40:13-69
 75        <activity
-75-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:43:9-46:72
+75-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:42:9-45:72
 76            android:name="com.example.smscallcapture.ui.activities.QRScannerActivity"
-76-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:44:13-60
+76-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:43:13-60
 77            android:exported="false"
-77-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:45:13-37
+77-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:44:13-37
 78            android:parentActivityName="com.example.smscallcapture.ui.activities.MainActivity" />
-78-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:46:13-69
+78-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:45:13-69
 79        <activity
-79-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:48:9-52:70
+79-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:47:9-51:70
 80            android:name="com.example.smscallcapture.ui.activities.CustomCaptureActivity"
-80-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:49:13-64
+80-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:48:13-64
 81            android:exported="false"
-81-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:51:13-37
+81-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:50:13-37
 82            android:screenOrientation="portrait"
-82-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:50:13-49
+82-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:49:13-49
 83            android:theme="@style/Theme.SmsCallCapture.NoActionBar" />
-83-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:52:13-68
+83-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:51:13-68
 84        <activity
-84-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:54:9-57:72
+84-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:53:9-56:72
 85            android:name="com.example.smscallcapture.ui.activities.LicenseActivity"
-85-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:55:13-58
+85-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:54:13-58
 86            android:exported="false"
-86-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:56:13-37
+86-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:55:13-37
 87            android:parentActivityName="com.example.smscallcapture.ui.activities.MainActivity" />
-87-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:57:13-69
+87-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:56:13-69
 88        <activity
-88-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:59:9-62:72
+88-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:58:9-61:72
 89            android:name="com.example.smscallcapture.ui.activities.SupportActivity"
-89-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:60:13-58
+89-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:59:13-58
 90            android:exported="false"
-90-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:61:13-37
+90-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:60:13-37
 91            android:parentActivityName="com.example.smscallcapture.ui.activities.MainActivity" />
-91-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:62:13-69
+91-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:61:13-69
 92
 93        <receiver
-93-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:64:9-71:20
+93-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:63:9-70:20
 94            android:name="com.example.smscallcapture.receivers.SmsReceiver"
-94-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:65:13-50
+94-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:64:13-50
 95            android:exported="true"
-95-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:66:13-36
+95-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:65:13-36
 96            android:permission="android.permission.BROADCAST_SMS" >
-96-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:67:13-66
+96-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:66:13-66
 97            <intent-filter android:priority="1000" >
-97-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:68:13-70:29
-97-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:68:28-51
+97-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:67:13-69:29
+97-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:67:28-51
 98                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-98-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:69:17-82
-98-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:69:25-79
+98-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:68:17-82
+98-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:68:25-79
 99            </intent-filter>
 100        </receiver>
 101
 102        <service
-102-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:73:9-76:66
+102-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:72:9-75:56
 103            android:name="com.example.smscallcapture.services.SyncService"
-103-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:74:13-49
+103-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:73:13-49
 104            android:exported="false"
-104-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:75:13-37
-105            android:foregroundServiceType="dataSync|phoneCall" />
-105-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:76:13-63
+104-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:74:13-37
+105            android:foregroundServiceType="dataSync" />
+105-->/home/mahuthu/Desktop/dotpesa2/app/src/main/AndroidManifest.xml:75:13-53
 106
 107        <provider
 107-->[androidx.emoji2:emoji2:1.2.0] /home/mahuthu/.gradle/caches/8.9/transforms/ea078f09102ffc4e6237e44a71ef5b5b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20

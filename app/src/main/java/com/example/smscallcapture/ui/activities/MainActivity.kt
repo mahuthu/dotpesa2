@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.smscallcapture.R
+import com.example.smscallcapture.SmsCallApplication
 import com.example.smscallcapture.databinding.ActivityMainBinding
 import com.example.smscallcapture.ui.adapters.MainPagerAdapter
 import com.example.smscallcapture.ui.fragments.CallsFragment
@@ -39,6 +40,9 @@ class MainActivity : AppCompatActivity() {
         val deniedPermissions = permissions.entries.filter { !it.value }
         if (deniedPermissions.isNotEmpty()) {
             Toast.makeText(this, "Some permissions were denied. App functionality may be limited.", Toast.LENGTH_LONG).show()
+        } else {
+            // Re-register call observer now that permission may be granted
+            (application as SmsCallApplication).ensureCallObserverRegistered()
         }
     }
 
@@ -103,6 +107,8 @@ class MainActivity : AppCompatActivity() {
         }.toTypedArray()
         if (permissionsToRequest.isNotEmpty()) {
             permissionLauncher.launch(permissionsToRequest)
+        } else {
+            (application as SmsCallApplication).ensureCallObserverRegistered()
         }
     }
 

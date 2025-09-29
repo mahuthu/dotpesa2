@@ -3329,6 +3329,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fabImportCalls
 id fabImportSms
 id fabRefreshCalls
 id fabRefreshSms

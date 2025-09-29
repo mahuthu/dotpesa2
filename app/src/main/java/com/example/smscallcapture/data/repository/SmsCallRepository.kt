@@ -22,6 +22,7 @@ class SmsCallRepository(
     suspend fun updateCallStatus(id: Long, status: String, uploadedDate: Long?, updatedAt: Long) =
         callDao.updateCallStatus(id, status, uploadedDate, updatedAt)
     suspend fun getPendingAndFailedCalls() = callDao.getPendingAndFailedCalls()
+    suspend fun getMaxCallStartTime(): Long? = callDao.getMaxStartTime()
 
     suspend fun getSetting(key: String) = settingsDao.getSetting(key)
     suspend fun setSetting(key: String, value: String) = settingsDao.insertSetting(SettingsEntity(key, value))

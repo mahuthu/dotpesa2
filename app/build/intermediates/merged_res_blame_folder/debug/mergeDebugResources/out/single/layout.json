@@ -12,10 +12,6 @@
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/tab_item.xml"
     },
     {
-        "merged": "com.example.smscallcapture.app-mergeDebugResources-55:/layout/tab_item.xml",
-        "source": "com.example.smscallcapture.app-main-58:/layout/tab_item.xml"
-    },
-    {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/fragment_sms.xml",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/fragment_sms.xml"
     },
@@ -38,6 +34,10 @@
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_settings.xml",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.example.smscallcapture.app-mergeDebugResources-55:/layout/fragment_calls.xml",
+        "source": "com.example.smscallcapture.app-main-58:/layout/fragment_calls.xml"
     },
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-mergeDebugResources-55:/layout/activity_support.xml",

@@ -145,7 +145,7 @@ public final class SmsDao_Impl implements SmsDao {
   }
 
   @Override
-  public Object insertSms(final SmsEntity sms, final Continuation<? super Long> $completion) {
+  public Object insertSms(final SmsEntity sms, final Continuation<? super Long> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Long>() {
       @Override
       @NonNull
@@ -159,11 +159,11 @@ public final class SmsDao_Impl implements SmsDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object updateSms(final SmsEntity sms, final Continuation<? super Unit> $completion) {
+  public Object updateSms(final SmsEntity sms, final Continuation<? super Unit> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -177,12 +177,12 @@ public final class SmsDao_Impl implements SmsDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
   public Object updateSmsStatus(final long id, final String status, final Long uploadedDate,
-      final long updatedAt, final Continuation<? super Unit> $completion) {
+      final long updatedAt, final Continuation<? super Unit> arg4) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -217,7 +217,7 @@ public final class SmsDao_Impl implements SmsDao {
           __preparedStmtOfUpdateSmsStatus.release(_stmt);
         }
       }
-    }, $completion);
+    }, arg4);
   }
 
   @Override
@@ -393,7 +393,7 @@ public final class SmsDao_Impl implements SmsDao {
   }
 
   @Override
-  public Object getPendingAndFailedSms(final Continuation<? super List<SmsEntity>> $completion) {
+  public Object getPendingAndFailedSms(final Continuation<? super List<SmsEntity>> arg0) {
     final String _sql = "SELECT * FROM sms WHERE status IN ('PENDING', 'FAILED')";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
@@ -469,7 +469,7 @@ public final class SmsDao_Impl implements SmsDao {
           _statement.release();
         }
       }
-    }, $completion);
+    }, arg0);
   }
 
   @NonNull

@@ -22,14 +22,28 @@
             android:layout_weight="1"/>
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabRefreshCalls"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:contentDescription="Sync Calls"
-        app:srcCompat="@android:drawable/ic_menu_rotate"/>
+        android:layout_margin="16dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabRefreshCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Sync Calls"
+            app:srcCompat="@android:drawable/ic_menu_rotate"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabImportCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Import Calls"
+            app:srcCompat="@android:drawable/ic_menu_add"/>
+    </LinearLayout>
 
 </FrameLayout>
 
