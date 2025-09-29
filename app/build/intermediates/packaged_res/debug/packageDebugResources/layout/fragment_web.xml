@@ -9,22 +9,61 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:max="100"
+        android:progress="0"
+        android:indeterminate="false"
+        android:visibility="gone"/>
+
     <LinearLayout
         android:id="@+id/welcomeOverlay"
         android:orientation="vertical"
         android:gravity="center"
         android:padding="24dp"
-        android:background="#CCFFFFFF"
+        android:background="#F2FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/textWelcome"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:text="Welcome to DotPesa\nSet your server Base URL to continue.\nExample: https://192.168.1.100:8080/"
-            android:gravity="center"
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/bg_welcome_panel">
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dotpesa2" />
+
+            <TextView
+                android:id="@+id/textWelcomeTitle"
+                android:text="Welcome to DotPesa"
+                android:textStyle="bold"
+                android:textColor="#1E6636"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textWelcome"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:text="Set your server Base URL in Settings or scan a QR to continue.\nExample: https://192.168.1.100:8080/"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout

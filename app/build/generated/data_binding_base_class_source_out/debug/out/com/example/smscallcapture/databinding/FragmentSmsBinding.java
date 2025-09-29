@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -25,18 +25,22 @@ public final class FragmentSmsBinding implements ViewBinding {
   public final FloatingActionButton fabImportSms;
 
   @NonNull
+  public final FloatingActionButton fabRefreshSms;
+
+  @NonNull
   public final RecyclerView recyclerSms;
 
   @NonNull
-  public final Spinner spinnerStatus;
+  public final SearchView searchSms;
 
   private FragmentSmsBinding(@NonNull FrameLayout rootView,
-      @NonNull FloatingActionButton fabImportSms, @NonNull RecyclerView recyclerSms,
-      @NonNull Spinner spinnerStatus) {
+      @NonNull FloatingActionButton fabImportSms, @NonNull FloatingActionButton fabRefreshSms,
+      @NonNull RecyclerView recyclerSms, @NonNull SearchView searchSms) {
     this.rootView = rootView;
     this.fabImportSms = fabImportSms;
+    this.fabRefreshSms = fabRefreshSms;
     this.recyclerSms = recyclerSms;
-    this.spinnerStatus = spinnerStatus;
+    this.searchSms = searchSms;
   }
 
   @Override
@@ -72,20 +76,26 @@ public final class FragmentSmsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fabRefreshSms;
+      FloatingActionButton fabRefreshSms = ViewBindings.findChildViewById(rootView, id);
+      if (fabRefreshSms == null) {
+        break missingId;
+      }
+
       id = R.id.recyclerSms;
       RecyclerView recyclerSms = ViewBindings.findChildViewById(rootView, id);
       if (recyclerSms == null) {
         break missingId;
       }
 
-      id = R.id.spinnerStatus;
-      Spinner spinnerStatus = ViewBindings.findChildViewById(rootView, id);
-      if (spinnerStatus == null) {
+      id = R.id.searchSms;
+      SearchView searchSms = ViewBindings.findChildViewById(rootView, id);
+      if (searchSms == null) {
         break missingId;
       }
 
-      return new FragmentSmsBinding((FrameLayout) rootView, fabImportSms, recyclerSms,
-          spinnerStatus);
+      return new FragmentSmsBinding((FrameLayout) rootView, fabImportSms, fabRefreshSms,
+          recyclerSms, searchSms);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

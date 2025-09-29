@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -29,7 +31,16 @@ public final class FragmentWebBinding implements ViewBinding {
   public final FloatingActionButton fabScan;
 
   @NonNull
+  public final ImageView imageLogo;
+
+  @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
   public final TextView textWelcome;
+
+  @NonNull
+  public final TextView textWelcomeTitle;
 
   @NonNull
   public final WebView webView;
@@ -38,12 +49,17 @@ public final class FragmentWebBinding implements ViewBinding {
   public final LinearLayout welcomeOverlay;
 
   private FragmentWebBinding(@NonNull FrameLayout rootView, @NonNull FloatingActionButton fabReload,
-      @NonNull FloatingActionButton fabScan, @NonNull TextView textWelcome,
-      @NonNull WebView webView, @NonNull LinearLayout welcomeOverlay) {
+      @NonNull FloatingActionButton fabScan, @NonNull ImageView imageLogo,
+      @NonNull ProgressBar progressBar, @NonNull TextView textWelcome,
+      @NonNull TextView textWelcomeTitle, @NonNull WebView webView,
+      @NonNull LinearLayout welcomeOverlay) {
     this.rootView = rootView;
     this.fabReload = fabReload;
     this.fabScan = fabScan;
+    this.imageLogo = imageLogo;
+    this.progressBar = progressBar;
     this.textWelcome = textWelcome;
+    this.textWelcomeTitle = textWelcomeTitle;
     this.webView = webView;
     this.welcomeOverlay = welcomeOverlay;
   }
@@ -87,9 +103,27 @@ public final class FragmentWebBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageLogo;
+      ImageView imageLogo = ViewBindings.findChildViewById(rootView, id);
+      if (imageLogo == null) {
+        break missingId;
+      }
+
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       id = R.id.textWelcome;
       TextView textWelcome = ViewBindings.findChildViewById(rootView, id);
       if (textWelcome == null) {
+        break missingId;
+      }
+
+      id = R.id.textWelcomeTitle;
+      TextView textWelcomeTitle = ViewBindings.findChildViewById(rootView, id);
+      if (textWelcomeTitle == null) {
         break missingId;
       }
 
@@ -105,8 +139,8 @@ public final class FragmentWebBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentWebBinding((FrameLayout) rootView, fabReload, fabScan, textWelcome,
-          webView, welcomeOverlay);
+      return new FragmentWebBinding((FrameLayout) rootView, fabReload, fabScan, imageLogo,
+          progressBar, textWelcome, textWelcomeTitle, webView, welcomeOverlay);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -5,7 +5,7 @@
     <color name="dotpesa_black">#000000</color>
     <color name="dotpesa_white">#FFFFFF</color>
 
-    <style name="Theme.SmsCallCapture" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.SmsCallCapture" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/dotpesa_green</item>
         <item name="colorPrimaryVariant">@color/dotpesa_green_dark</item>
         <item name="colorSecondary">@color/dotpesa_red</item>
@@ -17,5 +17,15 @@
     <style name="Theme.SmsCallCapture.NoActionBar" parent="Theme.SmsCallCapture">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ToolbarOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorControlNormal">@color/dotpesa_black</item>
+        <item name="android:textColor">@color/dotpesa_black</item>
+    </style>
+
+    <style name="PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:popupBackground">@color/dotpesa_white</item>
+        <item name="android:textColor">@color/dotpesa_black</item>
     </style>
 </resources>

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebChromeClient
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
 import com.example.smscallcapture.databinding.FragmentWebBinding
@@ -27,7 +28,13 @@ class WebFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.webView.settings.javaScriptEnabled = true
-        binding.webView.webViewClient = WebViewClient()
+        binding.webView.webViewClient = object : WebViewClient() {}
+        binding.webView.webChromeClient = object : WebChromeClient() {
+            override fun onProgressChanged(view: android.webkit.WebView?, newProgress: Int) {
+                binding.progressBar.visibility = if (newProgress in 1..99) View.VISIBLE else View.GONE
+                binding.progressBar.progress = newProgress
+            }
+        }
 
         binding.fabReload.setOnClickListener { reloadWebView() }
         binding.fabScan.setOnClickListener { startActivity(Intent(requireContext(), QRScannerActivity::class.java)) }
@@ -39,7 +46,11 @@ class WebFragment : Fragment() {
         val url = settingsManager.getBaseUrl()
         val hasUrl = url.isNotEmpty()
         binding.welcomeOverlay.visibility = if (hasUrl) View.GONE else View.VISIBLE
-        if (hasUrl) binding.webView.loadUrl(url)
+        if (hasUrl) {
+            binding.progressBar.progress = 0
+            binding.progressBar.visibility = View.VISIBLE
+            binding.webView.loadUrl(url)
+        }
     }
 
     override fun onResume() {

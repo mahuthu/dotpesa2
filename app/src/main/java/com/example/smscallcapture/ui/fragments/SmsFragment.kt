@@ -1,6 +1,7 @@
 package com.example.smscallcapture.ui.fragments
 
 import android.app.AlertDialog
+import android.app.DatePickerDialog
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -12,6 +13,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -27,14 +29,14 @@ import com.example.smscallcapture.utils.SettingsManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import java.text.SimpleDateFormat
-import java.util.Locale
+import java.util.Calendar
 
 class SmsFragment : Fragment() {
     private var _binding: FragmentSmsBinding? = null
     private val binding get() = _binding!!
     private val viewModel: SmsViewModel by viewModels()
     private val adapter = SmsAdapter()
+    private var fullList: List<SmsEntity> = emptyList()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -48,54 +50,46 @@ class SmsFragment : Fragment() {
         binding.recyclerSms.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerSms.adapter = adapter
         
-        val statuses = resources.getStringArray(R.array.status_filter)
-        binding.spinnerStatus.adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_dropdown_item, statuses)
-        binding.spinnerStatus.setSelection(0)
-        binding.spinnerStatus.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>, v: View?, position: Int, id: Long) {
-                viewModel.setStatusFilter(statuses[position])
-            }
-            override fun onNothingSelected(parent: AdapterView<*>) { }
-        }
-
-        binding.fabImportSms.setOnClickListener { showImportDialog() }
+        // Search instead of spinner
+        binding.fabRefreshSms.setOnClickListener { SyncService.startSync(requireContext(), SyncService.TARGET_SMS) }
+        binding.fabImportSms.setOnClickListener { showDatePicker() }
 
         viewModel.sms.observe(viewLifecycleOwner) { list ->
+            fullList = list
             adapter.submitList(list)
         }
+
+        binding.searchSms.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean { filterList(query); return true }
+            override fun onQueryTextChange(newText: String?): Boolean { filterList(newText); return true }
+        })
     }
 
-    private fun showImportDialog() {
-        val input = EditText(requireContext()).apply { hint = getString(R.string.import_sms_hint) }
-        AlertDialog.Builder(requireContext())
-            .setTitle(R.string.import_sms_title)
-            .setView(input)
-            .setNegativeButton(R.string.cancel, null)
-            .setPositiveButton(R.string.import_sms_action) { _, _ ->
-                val text = input.text?.toString()?.trim().orEmpty()
-                val millis = parseDateToMillis(text)
-                if (millis == null) {
-                    Toast.makeText(requireContext(), "Invalid date format", Toast.LENGTH_LONG).show()
-                    return@setPositiveButton
-                }
-                importSmsFrom(millis)
-            }
-            .show()
+    private fun filterList(query: String?) {
+        val q = (query ?: "").trim().lowercase()
+        if (q.isEmpty()) { adapter.submitList(fullList); return }
+        val filtered = fullList.filter { sms ->
+            sms.sender.lowercase().contains(q) ||
+            sms.message.lowercase().contains(q) ||
+            sms.receivedDate.toString().contains(q)
+        }
+        adapter.submitList(filtered)
     }
 
-    private fun parseDateToMillis(dateStr: String): Long? {
-        return try {
-            val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.US)
-            sdf.isLenient = false
-            val d = sdf.parse(dateStr)
-            d?.time
-        } catch (_: Exception) { null }
+    fun setStatusFilter(status: String) { viewModel.setStatusFilter(status) }
+
+    private fun showDatePicker() {
+        val cal = Calendar.getInstance()
+        val dlg = DatePickerDialog(requireContext(), { _, y, m, d ->
+            val pickedCal = Calendar.getInstance().apply { set(y, m, d, 0, 0, 0); set(Calendar.MILLISECOND, 0) }
+            importSmsFrom(pickedCal.timeInMillis)
+        }, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH))
+        dlg.show()
     }
 
     private fun importSmsFrom(startMillis: Long) {
         if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(requireContext(), "SMS permission not granted", Toast.LENGTH_LONG).show()
-            return
+            Toast.makeText(requireContext(), "SMS permission not granted", Toast.LENGTH_LONG).show(); return
         }
         val app = requireContext().applicationContext as SmsCallApplication
         val settings = SettingsManager(requireContext())
@@ -124,6 +118,7 @@ class SmsFragment : Fragment() {
                             sender = sender,
                             message = body,
                             receivedDate = date,
+                            uploadedDate = null,
                             status = "PENDING",
                             branchId = branchId,
                             deviceId = deviceId,
@@ -134,9 +129,7 @@ class SmsFragment : Fragment() {
                         imported++
                     }
                 }
-            } catch (_: SecurityException) {
-                // Permission issue handled above
-            }
+            } catch (_: SecurityException) { }
             CoroutineScope(Dispatchers.Main).launch {
                 Toast.makeText(requireContext(), "Imported $imported SMS", Toast.LENGTH_LONG).show()
                 SyncService.startSync(requireContext(), SyncService.TARGET_SMS)
@@ -144,8 +137,5 @@ class SmsFragment : Fragment() {
         }
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
+    override fun onDestroyView() { super.onDestroyView(); _binding = null }
 }

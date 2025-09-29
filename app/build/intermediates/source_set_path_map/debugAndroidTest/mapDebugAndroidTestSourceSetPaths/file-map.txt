@@ -1,0 +1,6 @@
+com.example.smscallcapture.test.app-jetified-annotation-experimental-1.3.0-0 /home/mahuthu/.gradle/caches/8.9/transforms/5456dbe3288f4cbb1cdac0da1294da9a/transformed/jetified-annotation-experimental-1.3.0/res
+com.example.smscallcapture.test.app-jetified-core-1.5.0-1 /home/mahuthu/.gradle/caches/8.9/transforms/de0ad70f579595b049dde2346a29c925/transformed/jetified-core-1.5.0/res
+com.example.smscallcapture.test.app-androidTest-2 /home/mahuthu/Desktop/dotpesa2/app/build/generated/res/resValues/androidTest/debug
+com.example.smscallcapture.test.app-mergeDebugAndroidTestResources-3 /home/mahuthu/Desktop/dotpesa2/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.smscallcapture.test.app-mergeDebugAndroidTestResources-4 /home/mahuthu/Desktop/dotpesa2/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.smscallcapture.test.app-debugAndroidTest-5 /home/mahuthu/Desktop/dotpesa2/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -28,15 +28,15 @@ public final class FragmentCallsBinding implements ViewBinding {
   public final RecyclerView recyclerCalls;
 
   @NonNull
-  public final Spinner spinnerStatus;
+  public final SearchView searchCalls;
 
   private FragmentCallsBinding(@NonNull FrameLayout rootView,
       @NonNull FloatingActionButton fabRefreshCalls, @NonNull RecyclerView recyclerCalls,
-      @NonNull Spinner spinnerStatus) {
+      @NonNull SearchView searchCalls) {
     this.rootView = rootView;
     this.fabRefreshCalls = fabRefreshCalls;
     this.recyclerCalls = recyclerCalls;
-    this.spinnerStatus = spinnerStatus;
+    this.searchCalls = searchCalls;
   }
 
   @Override
@@ -78,14 +78,14 @@ public final class FragmentCallsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.spinnerStatus;
-      Spinner spinnerStatus = ViewBindings.findChildViewById(rootView, id);
-      if (spinnerStatus == null) {
+      id = R.id.searchCalls;
+      SearchView searchCalls = ViewBindings.findChildViewById(rootView, id);
+      if (searchCalls == null) {
         break missingId;
       }
 
       return new FragmentCallsBinding((FrameLayout) rootView, fabRefreshCalls, recyclerCalls,
-          spinnerStatus);
+          searchCalls);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

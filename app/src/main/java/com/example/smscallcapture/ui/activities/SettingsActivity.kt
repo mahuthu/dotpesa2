@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import android.widget.AdapterView
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import com.example.smscallcapture.databinding.ActivitySettingsBinding
@@ -78,6 +79,7 @@ class SettingsActivity : AppCompatActivity() {
         binding.switchSoundUpload.setOnCheckedChangeListener { _, isChecked -> settings.setSmsUploadSound(isChecked) }
 
         binding.buttonTestConnection.setOnClickListener { testConnection() }
+        binding.buttonClearUrl.setOnClickListener { clearUrlAndReturn() }
     }
 
     private fun recomputeBaseUrl() {
@@ -107,6 +109,18 @@ class SettingsActivity : AppCompatActivity() {
                 runOnUiThread { Toast.makeText(this@SettingsActivity, "Connection failed: ${e.localizedMessage}", Toast.LENGTH_LONG).show() }
             }
         }
+    }
+
+    private fun clearUrlAndReturn() {
+        settings.setProtocol("https")
+        settings.setHost("")
+        settings.setPort("")
+        settings.setBaseUrl("")
+        binding.textBaseUrl.text = ""
+        Toast.makeText(this, "Base URL cleared", Toast.LENGTH_SHORT).show()
+        // Return to main; Web tab will show welcome overlay due to empty base URL
+        startActivity(Intent(this, MainActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+        finish()
     }
 
     override fun onSupportNavigateUp(): Boolean {

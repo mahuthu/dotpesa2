@@ -1,0 +1,3 @@
+com.example.smscallcapture.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

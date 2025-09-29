@@ -4,6 +4,10 @@
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/drawable_dotpesa2.png.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/drawable/dotpesa2.png"
+    },
+    {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/layout_activity_main.xml.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_main.xml"
     },
@@ -12,8 +16,16 @@
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.smscallcapture.app-debug-56:/drawable_ic_qr_code.xml.flat",
-        "source": "com.example.smscallcapture.app-main-58:/drawable/ic_qr_code.xml"
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/layout_tab_item.xml.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/tab_item.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/drawable_bg_welcome_panel.xml.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/drawable/bg_welcome_panel.xml"
+    },
+    {
+        "merged": "com.example.smscallcapture.app-debug-56:/drawable_bg_welcome_panel.xml.flat",
+        "source": "com.example.smscallcapture.app-main-58:/drawable/bg_welcome_panel.xml"
     },
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -40,16 +52,40 @@
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/mipmap-hdpi/ic_launcher.webp"
     },
     {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/layout_fragment_web.xml.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/fragment_web.xml"
+    },
+    {
+        "merged": "com.example.smscallcapture.app-debug-56:/layout_tab_item.xml.flat",
+        "source": "com.example.smscallcapture.app-main-58:/layout/tab_item.xml"
     },
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/layout_activity_qrscanner.xml.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_qrscanner.xml"
     },
     {
-        "merged": "com.example.smscallcapture.app-debug-56:/layout_item_sms.xml.flat",
-        "source": "com.example.smscallcapture.app-main-58:/layout/item_sms.xml"
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/drawable_dotpesa.png.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/drawable/dotpesa.png"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/drawable_dotpesa3.png.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/drawable/dotpesa3.png"
     },
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -68,8 +104,8 @@
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_support.xml"
     },
     {
-        "merged": "com.example.smscallcapture.app-debug-56:/layout_activity_license.xml.flat",
-        "source": "com.example.smscallcapture.app-main-58:/layout/activity_license.xml"
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/drawable_dotpesa1.png.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/drawable/dotpesa1.png"
     },
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/layout_activity_settings.xml.flat",
@@ -78,6 +114,10 @@
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/layout_fragment_calls.xml.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/fragment_calls.xml"
+    },
+    {
+        "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -90,10 +130,6 @@
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/drawable_ic_launcher_background.xml.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.example.smscallcapture.app-debug-56:/layout_item_call.xml.flat",
-        "source": "com.example.smscallcapture.app-main-58:/layout/item_call.xml"
     },
     {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -112,10 +148,6 @@
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.example.smscallcapture.app-debug-56:/layout_activity_support.xml.flat",
-        "source": "com.example.smscallcapture.app-main-58:/layout/activity_support.xml"
-    },
-    {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-pngs-52:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
@@ -124,11 +156,11 @@
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/drawable/ic_qr_code.xml"
     },
     {
-        "merged": "com.example.smscallcapture.app-debug-56:/layout_activity_qrscanner.xml.flat",
-        "source": "com.example.smscallcapture.app-main-58:/layout/activity_qrscanner.xml"
-    },
-    {
         "merged": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-debug-56:/menu_main_menu.xml.flat",
         "source": "/home/mahuthu/.gradle/daemon/8.9/com.example.smscallcapture.app-main-58:/menu/main_menu.xml"
+    },
+    {
+        "merged": "com.example.smscallcapture.app-debug-56:/menu_main_menu.xml.flat",
+        "source": "com.example.smscallcapture.app-main-58:/menu/main_menu.xml"
     }
 ]

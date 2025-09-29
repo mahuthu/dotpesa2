@@ -24,6 +24,9 @@ public final class ActivitySettingsBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
+  public final Button buttonClearUrl;
+
+  @NonNull
   public final Button buttonTestConnection;
 
   @NonNull
@@ -56,13 +59,14 @@ public final class ActivitySettingsBinding implements ViewBinding {
   @NonNull
   public final TextView textBaseUrl;
 
-  private ActivitySettingsBinding(@NonNull ScrollView rootView,
+  private ActivitySettingsBinding(@NonNull ScrollView rootView, @NonNull Button buttonClearUrl,
       @NonNull Button buttonTestConnection, @NonNull EditText editBranchId,
       @NonNull EditText editHost, @NonNull EditText editInterval, @NonNull EditText editModemId,
       @NonNull EditText editPort, @NonNull Spinner spinnerProtocol,
       @NonNull Switch switchSoundReceive, @NonNull Switch switchSoundUpload,
       @NonNull Switch switchToasts, @NonNull TextView textBaseUrl) {
     this.rootView = rootView;
+    this.buttonClearUrl = buttonClearUrl;
     this.buttonTestConnection = buttonTestConnection;
     this.editBranchId = editBranchId;
     this.editHost = editHost;
@@ -103,6 +107,12 @@ public final class ActivitySettingsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.buttonClearUrl;
+      Button buttonClearUrl = ViewBindings.findChildViewById(rootView, id);
+      if (buttonClearUrl == null) {
+        break missingId;
+      }
+
       id = R.id.buttonTestConnection;
       Button buttonTestConnection = ViewBindings.findChildViewById(rootView, id);
       if (buttonTestConnection == null) {
@@ -169,9 +179,9 @@ public final class ActivitySettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySettingsBinding((ScrollView) rootView, buttonTestConnection, editBranchId,
-          editHost, editInterval, editModemId, editPort, spinnerProtocol, switchSoundReceive,
-          switchSoundUpload, switchToasts, textBaseUrl);
+      return new ActivitySettingsBinding((ScrollView) rootView, buttonClearUrl,
+          buttonTestConnection, editBranchId, editHost, editInterval, editModemId, editPort,
+          spinnerProtocol, switchSoundReceive, switchSoundUpload, switchToasts, textBaseUrl);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

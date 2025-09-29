@@ -9,10 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Spinner
-            android:id="@+id/spinnerStatus"
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchSms"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:queryHint="Search messages"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerSms"
@@ -21,14 +22,28 @@
             android:layout_weight="1"/>
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabImportSms"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:contentDescription="@string/import_sms_title"
-        app:srcCompat="@android:drawable/ic_menu_add"/>
+        android:layout_margin="16dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabRefreshSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Sync SMS"
+            app:srcCompat="@android:drawable/ic_menu_rotate"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabImportSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Import &amp; Sync SMS"
+            app:srcCompat="@android:drawable/ic_menu_add"/>
+    </LinearLayout>
 
 </FrameLayout>
 
